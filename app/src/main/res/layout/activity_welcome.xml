@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="453dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+
+        <Button
+            android:id="@+id/btn_continuar_welcome"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/dark_yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToProductRegisterActivity"
+            android:text="Catálogo"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/dark_yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToRegisterActivity"
+            android:text="Alertas y notificaciones"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/dark_yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToMainActivity"
+            android:text="Cerrar Sesión"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+</ScrollView>

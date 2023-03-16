@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/titulo_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Producto # #"
+            android:textAlignment="center"
+            android:textAppearance="@style/SmartFeedTitle"
+            android:layout_marginTop="61dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Media -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="344dp"
+            android:layout_marginTop="20sp"
+            android:contentDescription="@string/content_description_media"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/imagen_grande_1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_monitor_1"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20sp"
+            app:cardBackgroundColor="@color/light_gray"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Franja superior con título y subtítulo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Talla: L"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Género: Unisex"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text= "Color rojo y azul oscuro -"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <!-- Franja con botones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="24dp">
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Botón Comprar -->
+        <Button
+            android:id="@+id/btn_configurar"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="Comprar"
+            android:textSize="15sp"
+            android:layout_marginStart="130sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"
+            android:backgroundTint="@color/dark_yellow"
+            android:gravity="center"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:onClick="goToAlimentadorRegisterActivity"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="52dp"
+            android:onClick="goToWelcomeActivity"
+            android:padding="8dp"
+            android:src="@drawable/home" />
+
+    </LinearLayout>
+</ScrollView>

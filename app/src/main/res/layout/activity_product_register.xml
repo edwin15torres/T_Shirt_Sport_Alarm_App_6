@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titulo_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es la marca de tu preferencia?"
+            android:textAlignment="center"
+            android:textAppearance="@style/SmartFeedTitle"
+            android:layout_marginTop="61dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="48dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToDashboardActivity"
+            android:text="Marca # 1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToDashboardActivity"
+            android:text="Marca # 2"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue"
+            app:strokeWidth="1dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToDashboardActivity"
+            android:text="Marca # 3"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue"
+            app:strokeWidth="1dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="goToDashboardActivity"
+            android:text="Marca # 4"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+</ScrollView>
